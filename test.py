@@ -1,7 +1,7 @@
 import cv2 as cv
 
-img = cv.imread('Images\alrick-gillard-0mN84vxigL0-unsplash.jpg')
+img = cv.imread('Images\girl.jpg')
 
-cv.imshow("alrick-gillard-0mN84vxigL0-unsplash", img)
+cv.imshow("girl", img)
 
-# cv.waitKey(10)
+cv.waitKey(0)
