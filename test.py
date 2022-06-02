@@ -6,9 +6,11 @@ import cv2 as cv
 
 # cv.waitKey(0)
 
-capture = cv.VideoCapture('Videos\Lambs eating grass.mp4')
+capture = cv.VideoCapture('Videos\Feeding a black dog.mp4')
 
-while True:
+istrue = True
+
+while istrue:
     istrue , frame = capture.read()
     cv.imshow('lambs', frame)   
 
