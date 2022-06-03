@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 
-image = cv.imread("Images\deer.jpg")
+image = cv.imread("OpenCv\Images\deer.jpg")
 img = cv.resize(image,(450,672))
 cv.imshow("OG", img)
 
