@@ -2,8 +2,7 @@ import cv2 as cv
 import numpy as np
 
 
-image = cv.imread('Images\girl.jpg')
-
+image = cv.imread('OpenCv\Images\girl.jpg')
 
 img = cv.resize(image, (500,700), interpolation=cv.INTER_CUBIC )
 cv.imshow('resize',img)
