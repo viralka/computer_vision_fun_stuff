@@ -4,7 +4,7 @@ import image_opener as ip
 
 # opening all the images from a folder
 img_list = ip.allimg(r'apple_masking\apple_image')
-img = img_list[7]
+img = img_list[6]
 cv.imshow( 'im`',img)
 
 
@@ -44,7 +44,7 @@ for cont in cont:
         img = cv.rectangle(img, (x,y), (x+h, y+w), (0,255,0), 2)
         i += 1
     
-    
+
 
 
 
