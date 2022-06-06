@@ -4,7 +4,7 @@ import image_opener as ip
 
 # opening all the images from a folder
 img_list = ip.allimg(r'apple_masking\apple_image')
-img = img_list[6]
+img = img_list[5]
 cv.imshow( 'im`',img)
 
 
