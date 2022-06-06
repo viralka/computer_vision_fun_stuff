@@ -2,9 +2,18 @@ import cv2 as cv
 import numpy as np
 import image_opener as ip
 
+
+def image_opener():
+    pass
+def total_area(img):
+    pass
+def red_percentage(img, total_area):
+    pass
+
+
 # opening all the images from a folder
 img_list = ip.allimg(r'apple_masking\apple_image')
-img = img_list[6]
+img = img_list[9]
 cv.imshow( 'im`',img)
 
 # taking the image 
@@ -37,8 +46,8 @@ cv.imshow("img",img)
 # defining color values
 
 # Red
-lower_r = np.array([0, 100, 20])
-upper_r = np.array([10, 255, 255])
+lower_r = np.array([15, 0, 0])
+upper_r = np.array([116, 255, 255])
 
 # createing a mask 
 mask = cv.inRange(hsv, lower_r, upper_r)

@@ -43,7 +43,8 @@ for cont in cont:
         cv.imwrite(name, cropped_img)
         img = cv.rectangle(img, (x,y), (x+h, y+w), (0,255,0), 2)
         i += 1
-        
+    
+    
 
 
 
