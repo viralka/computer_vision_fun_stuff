@@ -1,8 +1,9 @@
 import cv2
 import numpy as np
 
-url = r"https://192.168.117.63:8080/video"
+url = r"https://192.168.29.61:8080/video"
 cap = cv2.VideoCapture(url)
+
 while(True):
     camera, frame = cap.read()
     if frame is not None:

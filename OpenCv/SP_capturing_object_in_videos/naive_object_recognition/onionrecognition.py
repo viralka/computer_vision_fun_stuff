@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-url = r"https://192.168.117.63:8080/video"
+url = r"https://192.168.29.61:8080/video"
 cap = cv.VideoCapture(url)
 while(True):
     camera, frame = cap.read()
