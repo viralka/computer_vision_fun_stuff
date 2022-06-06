@@ -9,7 +9,7 @@ cap = cv2.VideoCapture(0)
 
 
 #img = cv2.imread('wheat-upper1.png')
-img = cv2.imread(r"C:\Users\mridu\Desktop\agnext\Agnext\OpenCv\apple_masking\apple_image\a1.jpg")
+img = cv2.imread(r"C:\Users\mridu\Desktop\agnext\Agnext\OpenCv\apple_masking\apple_image\apple111.jpg")
 
 new_rows = int(img.shape[0]/2)
 new_cols = int(img.shape[1]/2)
