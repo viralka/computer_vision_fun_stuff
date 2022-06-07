@@ -4,7 +4,7 @@ import time
 import image_opener as io
 
 # load the video from the phone 
-url = r"https://192.168.29.61:8080/video" # change everythime we have to jump ip
+url = r"https://100.109.200.153:8080/video" # change everythime we have to jump ip
 cap = cv.VideoCapture(url)
 
 # using inbuild methord
