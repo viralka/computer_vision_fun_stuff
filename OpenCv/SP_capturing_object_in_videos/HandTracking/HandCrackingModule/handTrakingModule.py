@@ -57,7 +57,7 @@ class handDetector():
                 lmlist.append([id,cx,cy])
                 if draw:
                 # if id == 4: # each id is equal some specific point in the hand
-                    cv.circle(frame, (cx,cy),25,(255,0,255), cv.FILLED)
+                    cv.circle(frame, (cx,cy),5,(0,0,255), cv.FILLED)
             
         return lmlist
 
@@ -74,12 +74,13 @@ def video_capture(url, size = 1000):
 def main():
     pTime = 0
     cTime = 0
-    cap = video_capture(r"https://192.168.29.61:8080/video")
+    cap = video_capture(r"https://192.168.117.63:8080/video")
     detector = handDetector()
 
 
     while True:
-        camera, frame = cap.read()
+        cam, frame = cap.read()
+        frame = cv.resize(frame,(1280,720),fx=0,fy=0, interpolation = cv.INTER_CUBIC)
         img = detector.findHands(frame)
 
         lmList = detector.findPosition(img)
@@ -93,7 +94,8 @@ def main():
 
         cv.putText(frame, str(int(fps)), (10,70), cv.FONT_HERSHEY_COMPLEX,3,(255,0,255),3)
         cv.imshow("Frame", frame)
-        q = cv.waitKey(1) 
+        q = cv.waitKey(0) 
+    cv.destroyAllWindows()
 
     
 
