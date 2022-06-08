@@ -4,7 +4,7 @@ import numpy as np
 def callback(x):
     pass
 
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0)
 # img = cv2.imread('IMG_20201224_12304.jpg')
 
 

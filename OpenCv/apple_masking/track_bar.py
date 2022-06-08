@@ -100,3 +100,62 @@ cv.destroyAllWindows()
 
 
 
+
+
+
+# # boilerplate for all testing purposes
+
+# import cv2 as cv
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import image_opener as ip
+
+# def test(x):
+#     pass
+# # opening all the images from a folder
+# img_list = ip.allimg(r'apple_masking\Defenct_detection\bad_apple_img')[:3]
+
+
+# # looping over all images 
+
+# found_valiable = {}
+# i = 0
+# for img in img_list:
+#     cv.imshow('img',img)
+    
+#     # making window
+#     cv.namedWindow("window")
+#     cv.resizeWindow("window", 700, 700)
+
+#     # creating trackbars
+
+#     cv.createTrackbar("h", "window", 0, 255, test)
+#     cv.createTrackbar("s", "window", 255, 255, test)
+#     cv.createTrackbar("v", "window", 0, 1,test)
+
+#     while True:
+
+#         k = cv.waitKey(1) & 0xFF
+
+        
+
+#         # filtering data
+#         h = cv.getTrackbarPos("h", 'window')
+#         s = cv.getTrackbarPos("s", 'window')
+#         v = cv.getTrackbarPos("v", 'window')
+
+
+
+
+#         if k == 27:
+#             found_valiable[i] = (h,s,v)
+#             i += 1
+#             break
+
+
+    
+
+#     cv.waitKey(2200)
+#     cv.destroyAllWindows()
+
+# print(found_valiable)

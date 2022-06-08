@@ -51,3 +51,20 @@ for cont in cont:
 img = cv.imshow("img",img)
 
 cv.waitKey(00)
+
+
+
+## boilerplate for every coder
+# import cv2 as cv
+# import numpy as np
+# import image_opener as ip
+
+# # opening all the images from a folder
+# img_list = ip.allimg(r'apple_masking\Defenct_detection\bad_apple_img')
+
+
+# # looping over all images 
+
+# for img in img_list:
+#     cv.imshow('img',img)
+#     cv.waitKey(2200)
