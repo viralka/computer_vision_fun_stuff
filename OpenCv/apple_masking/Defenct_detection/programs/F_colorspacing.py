@@ -5,7 +5,7 @@ import image_opener as ip
 
 
 # opening all the images from a folder
-img_list = ip.allimg(r'apple_masking\Defenct_detection\good_apple_img')
+img_list = ip.allimg(r'apple_masking\Defenct_detection\bad_apple_img')
 
 
 # looping over all images 
@@ -57,9 +57,9 @@ for img in img_list:
     percentage_rotten = round((area_rotten/area_fruit)*100, 2)
     print(f"Percentage of rotten fruit is {percentage_rotten} %")
     if (percentage_rotten > 5):
-        print("The fruit is rotten!")
+        print("rotten")
     else:
-        print("The fruit looks good!")
+        print("good")
 
     cv.waitKey(2200)
     cv.destroyAllWindows()

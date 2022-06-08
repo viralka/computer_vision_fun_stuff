@@ -6,7 +6,7 @@ import image_opener as ip
 def test(x):
     pass
 # opening all the images from a folder
-img_list = ip.allimg(r'apple_masking\Defenct_detection\bad_apple_img')[:3]
+img_list = ip.allimg(r'apple_masking\Defenct_detection\bad_apple_img')
 
 
 # looping over all images 
