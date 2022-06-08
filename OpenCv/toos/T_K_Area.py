@@ -40,3 +40,6 @@ for img in img_list:
 
 
     cv.waitKey(2200)
+
+
+    
